@@ -7,7 +7,7 @@ function TableRow(props) {
     birthday,
     email,
     phone } = props
-  console.log(imgSrc)
+  //console.log(imgSrc)
   return (<tr>
     <td><img src={imgSrc} alt={name} /></td>
     <td>{name}</td>

@@ -7,11 +7,12 @@ function Table() {
   const [users, setUsers] = useState(null);
   if (!users) {
 
-    fetch('https://randomuser.me/api/?results=15')
+    fetch('https://randomuser.me/api/?results=30')
       .then(res => {
         res.json().then(json => {
-          // console.log(json)
+          //console.log(json)
           setUsers(json.results)
+          console.log(json.results)
         })
       })
   }
