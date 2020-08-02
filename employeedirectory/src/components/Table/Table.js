@@ -22,10 +22,13 @@ function Table() {
       {
         users && (
           users.map(item => {
+            let date = new Date(item.dob.date);
+            let dateStr = date.toLocaleDateString();
+
             return <TableRow imgSrc={item.picture.thumbnail}
               name={`${item.name.first} ${item.name.last}`}
               gender={item.gender}
-              birthday={item.dob.date}
+              birthday={dateStr}
               email={item.email}
               phone={item.phone} />
           })
