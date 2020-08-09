@@ -1,41 +1,33 @@
 import React, { useState } from 'react';
 import TableHeader from './Table-header';
 import TableRow from './Table-row';
-// import './Table.css';
+import './table.css';
 
-function Table() {
-  const [users, setUsers] = useState(null);
-  if (!users) {
-
-    fetch('https://randomuser.me/api/?results=30')
-      .then(res => {
-        res.json().then(json => {
-          //console.log(json)
-          setUsers(json.results)
-          console.log(json.results)
-        })
-      })
-  }
+function Table(props) {
+  const { users } = props
   return (
-    <table className='table'>
-      <TableHeader headings={['', 'Name', 'Gender', 'Birthday', 'Email', 'Phone']} />
-      {
-        users && (
-          users.map(item => {
-            let date = new Date(item.dob.date);
-            let dateStr = date.toLocaleDateString();
+    <div className="uk-container table-container">
+      <table className="uk-table uk-table-striped table">
+        {/* <table className='table'> */}
+        <TableHeader sort={props.sort} headings={['', 'Name', 'Gender', 'Birthday', 'Email', 'Phone']} />
+        {
+          users && (
+            users.map(item => {
+              let date = new Date(item.dob.date);
+              let dateStr = date.toLocaleDateString();
 
-            return <TableRow imgSrc={item.picture.thumbnail}
-              name={`${item.name.first} ${item.name.last}`}
-              gender={item.gender}
-              birthday={dateStr}
-              email={item.email}
-              phone={item.phone} />
-          })
-        )
-      }
-    </table>
+              return <TableRow imgSrc={item.picture.thumbnail}
+                name={`${item.name.first} ${item.name.last}`}
+                gender={item.gender}
+                birthday={dateStr}
+                email={item.email}
+                phone={item.phone} />
+            })
+          )
+        }
+      </table >
+    </div>
   );
-}
+};
 
 export default Table;

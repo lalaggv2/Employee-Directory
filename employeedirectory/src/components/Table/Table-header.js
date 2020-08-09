@@ -1,12 +1,12 @@
 import React from 'react';
 // import './Table.css';
 
-function TableHeader({ headings }) {
+function TableHeader({ headings, sort }) {
   return (
     <thead>
       {headings && (
         headings.map(item => {
-          return <th>{item}</th>
+          return <th onClick={() => sort(item)}>{item}</th>
         })
       )}
     </thead>

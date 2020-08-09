@@ -1,4 +1,5 @@
 import React from 'react';
+import './table.css';
 
 function TableRow(props) {
   const { imgSrc,
