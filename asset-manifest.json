@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Employee-Directory/static/css/main.8990d488.chunk.css",
+    "main.js": "/Employee-Directory/static/js/main.cc8f7810.chunk.js",
+    "main.js.map": "/Employee-Directory/static/js/main.cc8f7810.chunk.js.map",
+    "runtime-main.js": "/Employee-Directory/static/js/runtime-main.6ca9f082.js",
+    "runtime-main.js.map": "/Employee-Directory/static/js/runtime-main.6ca9f082.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/Employee-Directory/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.146dcc0d.chunk.js": "/Employee-Directory/static/js/2.146dcc0d.chunk.js",
+    "static/js/2.146dcc0d.chunk.js.map": "/Employee-Directory/static/js/2.146dcc0d.chunk.js.map",
+    "index.html": "/Employee-Directory/index.html",
+    "precache-manifest.1e4f99a66b5bd3bc086721ea7806932b.js": "/Employee-Directory/precache-manifest.1e4f99a66b5bd3bc086721ea7806932b.js",
+    "service-worker.js": "/Employee-Directory/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/Employee-Directory/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.8990d488.chunk.css.map": "/Employee-Directory/static/css/main.8990d488.chunk.css.map",
+    "static/js/2.146dcc0d.chunk.js.LICENSE.txt": "/Employee-Directory/static/js/2.146dcc0d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ca9f082.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.146dcc0d.chunk.js",
+    "static/css/main.8990d488.chunk.css",
+    "static/js/main.cc8f7810.chunk.js"
+  ]
+}
