@@ -18,4 +18,15 @@ function SearchForm(props) {
   )
 };
 
+handleInputChange = event => {
+  // Getting the value and name of the input which triggered the change
+  const { name, value } = event.target;
+
+  // Updating the input's state
+  this.setState({
+    [name]: value
+  });
+};
+
+
 export default SearchForm;
