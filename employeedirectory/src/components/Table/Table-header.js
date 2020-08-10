@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Table.css';
+// eslint - disable - next - line
 
 function TableHeader({ headings, sort }) {
   return (
@@ -12,5 +12,6 @@ function TableHeader({ headings, sort }) {
     </thead>
   );
 }
+
 
 export default TableHeader;

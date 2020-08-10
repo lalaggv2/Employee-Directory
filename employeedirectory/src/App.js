@@ -38,11 +38,11 @@ function App() {
     sortedUsers.sort((a, b) => {
       console.log(a[field])
       if (field === 'name') {
-        return a.name.first < b.name.first
+        return a.name.first - b.name.first
       } else if (field === 'birthday') {
-        return a.dob.date < b.dob.date
+        return a.dob.date - b.dob.date
       } else {
-        return a[field] > b[field]
+        return a[field] - b[field]
       }
     })
     console.log(sortedUsers)
