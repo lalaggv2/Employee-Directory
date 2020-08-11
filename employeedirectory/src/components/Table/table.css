@@ -16,5 +16,17 @@ th {
 h1 {
   text-emphasis: bold;
   font-family: 'Lemonada', cursive;
+  background-color: burlywood;
+  padding: 20px;
 }
 
+.search {
+  padding: 15px;
+}
+
+footer {
+  background-color: burlywood;
+  text-align: center;
+  font-family: 'Lemonada', cursive;
+  padding: 12px;
+}
