@@ -31,23 +31,42 @@ function App() {
     }
   }
 
+  // const sort = (e) => {
+  //   const field = e.toLowerCase()
+  //   let sortedUsers = users.slice(0)
+  //   //console.log(field)
+  //   sortedUsers.sort((a, b) => {
+  //     //console.log(a[field])
+  //     if (field === 'name') {
+  //       return a.name.first < b.name.first
+  //     } else if (field === 'birthday') {
+  //       return a.dob.date > b.dob.date
+  //     } else {
+  //       return a[field] > b[field]
+  //     }
+  //   })
+  //   //console.log(sortedUsers)
+  //   setUsers(sortedUsers)
+  // }
+
   const sort = (e) => {
     const field = e.toLowerCase()
-    let sortedUsers = users.slice(0)
-    console.log(field)
+    let sortedUsers = [...users]; //.slice(0)
+    //console.log(field)
     sortedUsers.sort((a, b) => {
-      console.log(a[field])
-      if (field === 'name') {
-        return a.name.first - b.name.first
-      } else if (field === 'birthday') {
-        return a.dob.date - b.dob.date
+      //console.log(a[field])
+      if (a.name.first < b.name.first) {
+        return -1;
+      } else if (a.gender < b.gender) {
+        return -1
       } else {
-        return a[field] - b[field]
+        return a[field] < b[field]
       }
     })
     console.log(sortedUsers)
     setUsers(sortedUsers)
   }
+
 
   return (
     <div className="App">
